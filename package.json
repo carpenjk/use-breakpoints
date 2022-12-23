@@ -1,0 +1,58 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "This a description",
+  "main": "lib/index.js",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carpenjk/project-name.git"
+  },
+  "keywords": [
+    "keyword1",
+    "keyword2"
+  ],
+  "author": "Jeremy Carpenter",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/carpenjk/project-name/issues"
+  },
+  "homepage": "https://github.com/carpenjk/project-name#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.16.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "styled-components": "^5.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "styled-components": "^5.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
