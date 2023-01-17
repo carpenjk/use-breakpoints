@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "./types"
+    ],
+    "types": [
+      "jest"
+    ],
+    "jsx": "react",
+    "declaration": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
+    "outDir": "lib",
+    "rootDir": "src",
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/**/*",
+    "types",
+  ],
+}

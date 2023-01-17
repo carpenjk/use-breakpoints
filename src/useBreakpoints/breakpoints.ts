@@ -1,4 +1,4 @@
-import { IndexKey, BreakpointsParam, Breakpoints, BreakpointValue } from "../types/functionTypes"
+import type { BreakpointIndex, BreakpointsParam, Breakpoints, BreakpointValue } from "@carpenjk/prop-x-types"
 
 
 export const getPxValue = (value: string | number): BreakpointValue | null => {
@@ -72,7 +72,7 @@ export const getRatio = (breakpoints: BreakpointsParam, windowWidth: number): nu
 )
 
 // returns the array index or object key of nearest lower breakpoint
-export const getIndexOfLower = (breakpoints: BreakpointsParam, windowWidth: number): IndexKey => {
+export const getIndexOfLower = (breakpoints: BreakpointsParam, windowWidth: number): BreakpointIndex => {
   const brPixels: Breakpoints = getBreakpointPixels(breakpoints)
   if (brPixels.length === 1) {
     return 0
