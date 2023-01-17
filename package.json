@@ -2,7 +2,7 @@
   "name": "@carpenjk/use-breakpoints",
   "version": "0.0.0-development",
   "description": "A library using breakpoints in react",
-  "main": "lib/core.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "rimraf ./lib && tsc",
     "test": " jest",

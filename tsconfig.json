@@ -24,6 +24,8 @@
   },
   "include": [
     "src/**/*",
-    "types",
   ],
+  "exclude": [
+    "src/jest/*"
+  ]
 }
