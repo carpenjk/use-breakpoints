@@ -1,5 +1,5 @@
 {
-  "name": "@carpenjk/prop-x/useBreakpoints",
+  "name": "@carpenjk/use-breakpoints",
   "version": "0.0.0-development",
   "description": "A library using breakpoints in react",
   "main": "lib/core.js",
