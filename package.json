@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "rimraf ./lib && tsc",
+    "prepublish": "npm run build",
     "test": " jest",
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz"
